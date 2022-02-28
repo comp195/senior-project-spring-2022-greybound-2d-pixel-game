@@ -8,8 +8,8 @@ Greybound is a 2D pixel game. Since the game is 2D, the game is played with just
 
 Product Components:  
 Creation of this game was done with various programs. Firstly, it was created using Windows 10 and intended to use Windows 10 to run. The software used were Aseprite, Unity, and Visual Studio. Aseprite is a graphical software where you can create pixel art. This art created can be exported and used by Unity. Unity is a game engine that works along side Viusla Studio to create the game logic.  
-Hardware used and recommended
 
 Special notes:  
+None  
 
 senior-project-spring-2022-greybound-2d-pixel-game created by GitHub Classroom
