@@ -6,10 +6,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public class PlayerController1 : MonoBehaviour
 {
 
-    public Animator animator;
+    public Animator topAnimator;
+    public Animator bottomAnimator;
     public GameObject crossHair;
 
     public GameObject bulletPrefab;
@@ -19,14 +20,24 @@ public class PlayerController : MonoBehaviour
     {
         /* Vector for movement */
         Vector3 movement = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0.0f);
+        Vector3 aim = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0.0f);
 
 
 
         AimAndShoot();
 
-        animator.SetFloat("Horizontal", movement.x);
-        animator.SetFloat("Vertical", movement.y);
-        animator.SetFloat("Magnitude", movement.magnitude);
+        bottomAnimator.SetFloat("Horizontal", movement.x);
+        bottomAnimator.SetFloat("Vertical", movement.y);
+        bottomAnimator.SetFloat("Magnitude", movement.magnitude);
+
+        topAnimator.SetFloat("MoveHorizontal", movement.x);
+        topAnimator.SetFloat("MoveVertical", movement.y);
+        topAnimator.SetFloat("MoveMagnitude", movement.magnitude);
+
+        topAnimator.SetFloat("AimHorizontal", aim.x);
+        topAnimator.SetFloat("AimVertical", aim.y);
+        topAnimator.SetFloat("AimMagnitude", aim.magnitude);
+        topAnimator.SetBool("Aim", Input.GetButtonDown("FireMouse"));
 
         /* Smooths movement out */
         transform.position = transform.position + movement * Time.deltaTime;
@@ -53,7 +64,7 @@ public class PlayerController : MonoBehaviour
             crossHair.SetActive(true);
 
             shootingDirection.Normalize();
-            if (Input.GetButtonDown("FireMouse"))
+            if (Input.GetButtonUp("FireMouse"))
             {
                 GameObject bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
                 /* Multiply by value to increase speed */
