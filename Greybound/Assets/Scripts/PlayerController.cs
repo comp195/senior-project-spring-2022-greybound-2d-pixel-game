@@ -11,7 +11,6 @@ public class PlayerController : MonoBehaviour
 
     public Animator animator;
     public GameObject crossHair;
-
     public GameObject bulletPrefab;
 
     // Update is called once per frame
@@ -53,7 +52,7 @@ public class PlayerController : MonoBehaviour
             crossHair.SetActive(true);
 
             shootingDirection.Normalize();
-            if (Input.GetButtonDown("FireMouse"))
+            if (Input.GetKeyDown(KeyCode.Mouse0))
             {
                 GameObject bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
                 /* Multiply by value to increase speed */
@@ -69,6 +68,27 @@ public class PlayerController : MonoBehaviour
             crossHair.SetActive(false);
 
         }
+    }
+
+    public void SavePlayer()
+    {
+        SaveSystem.SavePlayer(this);
+    }
+
+    
+    public void LoadPlayer()
+    {
+        PlayerData data = SaveSystem.LoadPlayer();
+
+        /* Import all player attributes */
+        
+        Vector3 position;
+        position.x = data.position[0];
+        position.y = data.position[1];
+        position.z = data.position[2];
+        transform.position = position;
+        /* Destroy bullets when loading */
+        
     }
 }
 
