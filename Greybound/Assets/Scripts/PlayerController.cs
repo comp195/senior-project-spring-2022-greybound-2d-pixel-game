@@ -8,38 +8,80 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-
     public Animator animator;
     public GameObject crossHair;
     public GameObject bulletPrefab;
 
-    // Update is called once per frame
+    Vector3 movement;
+    Vector3 aim;
+    bool isAiming;
+    bool endOfAiming;
+
+    
+    void Awake()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+    }
+
     void Update()
     {
         /* Vector for movement */
-        Vector3 movement = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0.0f);
+        //Vector3 movement = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0.0f);
 
-
-
+        ProcessInputs();
         AimAndShoot();
+        Animate();
+        Move();
 
+        /*
         animator.SetFloat("Horizontal", movement.x);
         animator.SetFloat("Vertical", movement.y);
         animator.SetFloat("Magnitude", movement.magnitude);
+        */
 
         /* Smooths movement out */
-        transform.position = transform.position + movement * Time.deltaTime;
+        //transform.position = transform.position + movement * Time.deltaTime;
     }
 
     private void ProcessInputs()
     {
+        /* Vector for movement */
+        movement = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0.0f);
+        Vector3 mouseMovement = new Vector3(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"), 0.0f);
+        aim = aim + mouseMovement;
+        /* Restricts crosshair x units away from player */
+        if (aim.magnitude > 1.0f)
+        {
+            aim.Normalize();
+        }
+        //aim = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0.0f);
+        isAiming = Input.GetKeyDown(KeyCode.Mouse0);
+        endOfAiming = Input.GetKeyUp(KeyCode.Mouse0);
 
+        if(movement.magnitude > 1.0f)
+        {
+            movement.Normalize();
+        }
+    }
+
+    public void Move()
+    {
+        /* Smooths movement out */
+        transform.position = transform.position + movement * Time.deltaTime;
+    }
+
+    public void Animate()
+    {
+        animator.SetFloat("Horizontal", movement.x);
+        animator.SetFloat("Vertical", movement.y);
+        animator.SetFloat("Magnitude", movement.magnitude);
     }
 
     public void AimAndShoot()
     {
-        Vector3 aim = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0.0f);
-        Vector2 shootingDirection = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+        //Vector3 aim = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0.0f);
+        Vector2 shootingDirection = new Vector2(aim.x, aim.y);
 
         if (aim.magnitude > 0.0f)
         {
@@ -47,12 +89,12 @@ public class PlayerController : MonoBehaviour
 
             /* Makes it closer */
             // Adjust value for different ranges
-            //aim *= 0.4f;
+            aim *= 0.4f;
             crossHair.transform.localPosition = aim;
             crossHair.SetActive(true);
 
             shootingDirection.Normalize();
-            if (Input.GetKeyDown(KeyCode.Mouse0))
+            if (endOfAiming)
             {
                 GameObject bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
                 /* Multiply by value to increase speed */
