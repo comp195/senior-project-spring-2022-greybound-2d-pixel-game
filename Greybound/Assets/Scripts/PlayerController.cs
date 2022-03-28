@@ -2,26 +2,34 @@
 // mouse 0 = left click
 // mouse 1 = right click
 
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public Animator animator;
+    public Animator shootingAnimator;
+    //public Animator movementAnimator;
     public GameObject crossHair;
     public GameObject bulletPrefab;
 
+    public int maxHealth = 100;
+    public int currentHealth;
+    public HealthBar healthBar;
+
     Vector3 movement;
     Vector3 aim;
-    bool isAiming;
-    bool endOfAiming;
 
-    
+    /*
     void Awake()
     {
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+    }
+    */
+
+    void Start()
+    {
+        currentHealth = maxHealth;
+        healthBar.SetMaxHealth(maxHealth);
     }
 
     void Update()
@@ -33,6 +41,16 @@ public class PlayerController : MonoBehaviour
         AimAndShoot();
         Animate();
         Move();
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            TakeDamage(20);
+        }
+
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            HealDamage(20);
+        }
 
         /*
         animator.SetFloat("Horizontal", movement.x);
@@ -51,15 +69,13 @@ public class PlayerController : MonoBehaviour
         Vector3 mouseMovement = new Vector3(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"), 0.0f);
         aim = aim + mouseMovement;
         /* Restricts crosshair x units away from player */
-        if (aim.magnitude > 1.0f)
+        //if (aim.magnitude > 1.0f)
+        if (Input.GetKeyUp(KeyCode.Mouse1))
         {
             aim.Normalize();
         }
-        //aim = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0.0f);
-        isAiming = Input.GetKeyDown(KeyCode.Mouse0);
-        endOfAiming = Input.GetKeyUp(KeyCode.Mouse0);
 
-        if(movement.magnitude > 1.0f)
+        if (movement.magnitude > 1.0f)
         {
             movement.Normalize();
         }
@@ -73,9 +89,13 @@ public class PlayerController : MonoBehaviour
 
     public void Animate()
     {
-        animator.SetFloat("Horizontal", movement.x);
-        animator.SetFloat("Vertical", movement.y);
-        animator.SetFloat("Magnitude", movement.magnitude);
+        //movementAnimator.SetFloat("Horizontal", movement.x);
+        //movementAnimator.SetFloat("Vertical", movement.y);
+        //movementAnimator.SetFloat("Magnitude", movement.magnitude);
+
+        shootingAnimator.SetFloat("Horizontal", aim.x);
+        shootingAnimator.SetFloat("Vertical", aim.y);
+        shootingAnimator.SetFloat("Magnitude", aim.magnitude);
     }
 
     public void AimAndShoot()
@@ -83,18 +103,16 @@ public class PlayerController : MonoBehaviour
         //Vector3 aim = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0.0f);
         Vector2 shootingDirection = new Vector2(aim.x, aim.y);
 
-        if (aim.magnitude > 0.0f)
+        //if (aim.magnitude > 0.0f)
+        if (Input.GetButton("Aim"))
         {
-            aim.Normalize();
-
             /* Makes it closer */
-            // Adjust value for different ranges
-            aim *= 0.4f;
-            crossHair.transform.localPosition = aim;
+            crossHair.transform.localPosition = aim * 0.4f;
             crossHair.SetActive(true);
+            RemoveCursor();
 
             shootingDirection.Normalize();
-            if (endOfAiming)
+            if (Input.GetKeyDown(KeyCode.Mouse0))
             {
                 GameObject bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
                 /* Multiply by value to increase speed */
@@ -108,8 +126,27 @@ public class PlayerController : MonoBehaviour
         } else
         {
             crossHair.SetActive(false);
-
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
         }
+    }
+
+    public void RemoveCursor()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+    }
+
+    void TakeDamage(int damage)
+    {
+        currentHealth -= damage;
+        healthBar.SetHealth(currentHealth);
+    }
+
+    void HealDamage(int heal)
+    {
+        currentHealth += heal;
+        healthBar.SetHealth(currentHealth);
     }
 
     public void SavePlayer()
