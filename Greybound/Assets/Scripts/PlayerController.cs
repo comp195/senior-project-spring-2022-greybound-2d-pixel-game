@@ -145,6 +145,7 @@ public class PlayerController : MonoBehaviour
 
     void HealDamage(int heal)
     {
+        // currenthealth !> maxHealth
         currentHealth += heal;
         healthBar.SetHealth(currentHealth);
     }

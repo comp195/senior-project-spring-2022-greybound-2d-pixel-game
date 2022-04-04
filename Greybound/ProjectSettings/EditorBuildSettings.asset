@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TestLevel 1.unity
     guid: 204f5e3c365c72c4187d0c9a137ce149
+  - enabled: 1
+    path: Assets/Scenes/Saloon.unity
+    guid: 8596b92489e5d0940acd5051ac830baa
   m_configObjects: {}
