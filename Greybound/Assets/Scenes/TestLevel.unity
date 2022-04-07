@@ -448,6 +448,7 @@ MonoBehaviour:
   maxHealth: 100
   currentHealth: 0
   healthBar: {fileID: 0}
+  currentScene: 
 --- !u!212 &160755281
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1289,7 +1290,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 160755280}
+      - m_Target: {fileID: 1673542829}
         m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
         m_MethodName: LoadPlayer
         m_Mode: 1
@@ -2166,6 +2167,7 @@ MonoBehaviour:
   maxHealth: 100
   currentHealth: 0
   healthBar: {fileID: 0}
+  currentScene: 
 --- !u!50 &974489076
 Rigidbody2D:
   serializedVersion: 4
@@ -3314,6 +3316,7 @@ MonoBehaviour:
   maxHealth: 100
   currentHealth: 0
   healthBar: {fileID: 1917378822}
+  currentScene: 
 --- !u!95 &1673542830
 Animator:
   serializedVersion: 3
@@ -3924,7 +3927,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 160755280}
+      - m_Target: {fileID: 1673542829}
         m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
         m_MethodName: SavePlayer
         m_Mode: 1

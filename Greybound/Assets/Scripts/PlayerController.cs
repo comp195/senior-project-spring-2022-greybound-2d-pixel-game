@@ -3,6 +3,7 @@
 // mouse 1 = right click
 
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -14,6 +15,8 @@ public class PlayerController : MonoBehaviour
     public int maxHealth = 100;
     public int currentHealth;
     public HealthBar healthBar;
+
+    public string currentScene;
 
     Vector3 movement;
     Vector3 aim;
@@ -30,6 +33,10 @@ public class PlayerController : MonoBehaviour
     {
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
+
+        Scene scene = SceneManager.GetActiveScene();
+        currentScene = scene.name;
+        //Debug.Log(currentScene);
     }
 
     void Update()
@@ -145,8 +152,11 @@ public class PlayerController : MonoBehaviour
 
     void HealDamage(int heal)
     {
-        // currenthealth !> maxHealth
         currentHealth += heal;
+        if (currentHealth > maxHealth)
+        {
+            currentHealth = maxHealth;
+        }
         healthBar.SetHealth(currentHealth);
     }
 
@@ -161,14 +171,30 @@ public class PlayerController : MonoBehaviour
         PlayerData data = SaveSystem.LoadPlayer();
 
         /* Import all player attributes */
+        currentHealth = data.health;
+        healthBar.SetHealth(currentHealth);
+
+        currentScene = data.scene;
         
+        /*
+        if (currentScene == "TestLevel")
+        {
+            SceneManager.LoadScene("TestLevel");
+        }
+
+        if (currentScene == "Saloon")
+        {
+            SceneManager.LoadScene("Saloon");
+        }
+        */
+
         Vector3 position;
         position.x = data.position[0];
         position.y = data.position[1];
         position.z = data.position[2];
         transform.position = position;
         /* Destroy bullets when loading */
-        
+
     }
 }
 
