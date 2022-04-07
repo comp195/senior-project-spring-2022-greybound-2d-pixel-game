@@ -170,12 +170,7 @@ public class PlayerController : MonoBehaviour
     {
         PlayerData data = SaveSystem.LoadPlayer();
 
-        /* Import all player attributes */
-        currentHealth = data.health;
-        healthBar.SetHealth(currentHealth);
-
         currentScene = data.scene;
-        
         /*
         if (currentScene == "TestLevel")
         {
@@ -186,7 +181,11 @@ public class PlayerController : MonoBehaviour
         {
             SceneManager.LoadScene("Saloon");
         }
-        */
+        /*
+
+        /* Import all player attributes */
+        currentHealth = data.health;
+        healthBar.SetHealth(currentHealth);
 
         Vector3 position;
         position.x = data.position[0];
