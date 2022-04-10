@@ -19,7 +19,8 @@ public class PlayerController : MonoBehaviour
     public string currentScene;
 
     Vector3 movement;
-    Vector3 aim;
+    Vector3 mouseMovement;
+    Vector3 aiming;
 
     /*
     void Awake()
@@ -31,8 +32,7 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
-        currentHealth = maxHealth;
-        healthBar.SetMaxHealth(maxHealth);
+        HealthStat();
 
         Scene scene = SceneManager.GetActiveScene();
         currentScene = scene.name;
@@ -73,13 +73,15 @@ public class PlayerController : MonoBehaviour
     {
         /* Vector for movement */
         movement = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0.0f);
-        Vector3 mouseMovement = new Vector3(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"), 0.0f);
-        aim = aim + mouseMovement;
-        /* Restricts crosshair x units away from player */
-        //if (aim.magnitude > 1.0f)
+
+        /* Vector for mouse movement */
+        mouseMovement = new Vector3(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"), 0.0f);
+
+        aiming = aiming + mouseMovement;
+
         if (Input.GetKeyUp(KeyCode.Mouse1))
         {
-            aim.Normalize();
+            aiming.Normalize();
         }
 
         if (movement.magnitude > 1.0f)
@@ -100,21 +102,21 @@ public class PlayerController : MonoBehaviour
         //movementAnimator.SetFloat("Vertical", movement.y);
         //movementAnimator.SetFloat("Magnitude", movement.magnitude);
 
-        shootingAnimator.SetFloat("Horizontal", aim.x);
-        shootingAnimator.SetFloat("Vertical", aim.y);
-        shootingAnimator.SetFloat("Magnitude", aim.magnitude);
+        shootingAnimator.SetFloat("Horizontal", aiming.x);
+        shootingAnimator.SetFloat("Vertical", aiming.y);
+        shootingAnimator.SetFloat("Magnitude", aiming.magnitude);
     }
 
     public void AimAndShoot()
     {
         //Vector3 aim = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0.0f);
-        Vector2 shootingDirection = new Vector2(aim.x, aim.y);
+        Vector2 shootingDirection = new Vector2(aiming.x, aiming.y);
 
         //if (aim.magnitude > 0.0f)
         if (Input.GetButton("Aim"))
         {
             /* Makes it closer */
-            crossHair.transform.localPosition = aim * 0.4f;
+            crossHair.transform.localPosition = aiming * 0.4f;
             crossHair.SetActive(true);
             RemoveCursor();
 
@@ -142,6 +144,12 @@ public class PlayerController : MonoBehaviour
     {
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+    }
+
+    void HealthStat()
+    {
+        currentHealth = maxHealth;
+        healthBar.SetMaxHealth(maxHealth);
     }
 
     void TakeDamage(int damage)
