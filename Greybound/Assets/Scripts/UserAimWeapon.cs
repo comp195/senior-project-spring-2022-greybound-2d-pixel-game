@@ -16,12 +16,12 @@ public class UserAimWeapon : MonoBehaviour
     private Transform aimTransform;
     private Transform aimGunEndPointTransform;
     private Transform aimBulletPositionTransform;
-    private Animator aimAnimator;
+    public Animator muzzleFlash;
 
     private void Awake()
     {
         aimTransform = transform.Find("Aim");
-        aimAnimator = aimTransform.GetComponent<Animator>();
+        //aimAnimator = aimTransform.GetComponent<Animator>();
         aimGunEndPointTransform = aimTransform.Find("GunEndPointPosition");
         aimBulletPositionTransform = aimTransform.Find("BulletPosition");
     }
@@ -54,20 +54,30 @@ public class UserAimWeapon : MonoBehaviour
 
     private void HandleShooting()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetButton("Aim"))
         {
-            Vector3 mousePosition = GetMouseWorldPosition();
-
-            aimAnimator.SetTrigger("Shoot");
-            OnShoot?.Invoke(this, new OnShootEventArgs
+            if (Input.GetMouseButtonDown(0))
             {
-                gunEndPointPosition = aimGunEndPointTransform.position, 
-                shootPosition = mousePosition,
-                bulletPosition = aimBulletPositionTransform.position
-            });
+                /*
+                Vector3 mousePosition = GetMouseWorldPosition();
+
+                aimAnimator.SetTrigger("Shoot");
+
+                OnShoot?.Invoke(this, new OnShootEventArgs
+                {
+                    gunEndPointPosition = aimGunEndPointTransform.position, 
+                    shootPosition = mousePosition,
+                    bulletPosition = aimBulletPositionTransform.position
+                });
+                */
+                muzzleFlash.SetBool("Shoot", true);
+            }
+            else
+            {
+                muzzleFlash.SetBool("Shoot", false);
+            }
         }
     }
-
     /* Get Mouse Position in World with z = 0f */
     public static Vector3 GetMouseWorldPosition()
     {
