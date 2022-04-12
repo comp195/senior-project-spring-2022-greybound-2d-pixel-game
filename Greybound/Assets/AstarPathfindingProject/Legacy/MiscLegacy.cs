@@ -1,5 +1,6 @@
 using UnityEngine;
 using Pathfinding.Util;
+using System;
 
 namespace Pathfinding {
 	// Obsolete methods in AIPath
@@ -11,11 +12,16 @@ namespace Pathfinding {
 		[System.Obsolete("When unifying the interfaces for different movement scripts, this property has been renamed to reachedEndOfPath.  [AstarUpgradable: 'TargetReached' -> 'reachedEndOfPath']")]
 		public bool TargetReached { get { return reachedEndOfPath; } }
 
-		/// <summary>
-		/// Rotation speed.
-		/// Deprecated: This field has been renamed to <see cref="rotationSpeed"/> and is now in degrees per second instead of a damping factor.
-		/// </summary>
-		[System.Obsolete("This field has been renamed to #rotationSpeed and is now in degrees per second instead of a damping factor")]
+        public void canMove(bool v)
+        {
+            throw new NotImplementedException();
+        }
+
+        /// <summary>
+        /// Rotation speed.
+        /// Deprecated: This field has been renamed to <see cref="rotationSpeed"/> and is now in degrees per second instead of a damping factor.
+        /// </summary>
+        [System.Obsolete("This field has been renamed to #rotationSpeed and is now in degrees per second instead of a damping factor")]
 		public float turningSpeed { get { return rotationSpeed/90; } set { rotationSpeed = value*90; } }
 
 		/// <summary>

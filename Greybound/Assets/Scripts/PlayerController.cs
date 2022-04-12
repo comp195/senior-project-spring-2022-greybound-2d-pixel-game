@@ -32,6 +32,7 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
+        
         HealthStat();
 
         Scene scene = SceneManager.GetActiveScene();
