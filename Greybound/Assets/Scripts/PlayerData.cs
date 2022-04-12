@@ -11,7 +11,7 @@ public class PlayerData
     public string scene;
     public float[] position;
 
-    public PlayerData (UserController2D player)
+    public PlayerData (PlayerController player)
     {
         /* Import all player attributes */
         health = player.currentHealth;

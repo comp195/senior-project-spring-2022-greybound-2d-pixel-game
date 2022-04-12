@@ -12,6 +12,7 @@ public class EnemyAI : MonoBehaviour
     void Update()
     {
         Animate();
+        aiPath.canMove(false);
     }
 
     void Animate()

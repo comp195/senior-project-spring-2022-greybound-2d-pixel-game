@@ -171,7 +171,7 @@ public class PlayerController : MonoBehaviour
 
     public void SavePlayer()
     {
-        //SaveSystem.SavePlayer(this);
+        SaveSystem.SavePlayer(this);
     }
 
     
