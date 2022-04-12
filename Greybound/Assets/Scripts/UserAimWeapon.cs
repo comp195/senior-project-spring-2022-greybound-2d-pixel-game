@@ -78,7 +78,6 @@ public class UserAimWeapon : MonoBehaviour
             }
         }
     }
-
     /* Get Mouse Position in World with z = 0f */
     public static Vector3 GetMouseWorldPosition()
     {
