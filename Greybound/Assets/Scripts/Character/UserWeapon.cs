@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-public class UserAimWeapon : MonoBehaviour
+public class UserWeapon : MonoBehaviour
 {
+    
     public event EventHandler<OnShootEventArgs> OnShoot;
     public class OnShootEventArgs : EventArgs
     {
@@ -12,18 +13,16 @@ public class UserAimWeapon : MonoBehaviour
         public Vector3 shootPosition;
         public Vector3 bulletPosition;
     }
+    
 
     private Transform aimTransform;
-    private Transform aimGunEndPointTransform;
-    private Transform aimBulletPositionTransform;
+    public Transform firePoint;
     public Animator muzzleFlash;
+    public GameObject bulletPrefab;
 
     private void Awake()
     {
         aimTransform = transform.Find("Aim");
-        //aimAnimator = aimTransform.GetComponent<Animator>();
-        aimGunEndPointTransform = aimTransform.Find("GunEndPointPosition");
-        aimBulletPositionTransform = aimTransform.Find("BulletPosition");
     }
 
     private void Update()
@@ -71,6 +70,8 @@ public class UserAimWeapon : MonoBehaviour
                 });
                 */
                 muzzleFlash.SetBool("Shoot", true);
+                spawnBullet();
+                Destroy(bulletPrefab, 2.0f);
             }
             else
             {
@@ -78,6 +79,12 @@ public class UserAimWeapon : MonoBehaviour
             }
         }
     }
+
+    void spawnBullet()
+    {
+        Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+    }
+
     /* Get Mouse Position in World with z = 0f */
     public static Vector3 GetMouseWorldPosition()
     {

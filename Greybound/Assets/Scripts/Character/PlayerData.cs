@@ -21,6 +21,18 @@ public class PlayerData
         position[0] = player.transform.position.x;
         position[1] = player.transform.position.y;
         position[2] = player.transform.position.z;
+    }    
+    
+    public PlayerData (EnemyAI enemy)
+    {
+        /* Import all player attributes */
+        health = enemy.currentHealth;
+        //scene = enemy.currentScene;
+
+        position = new float[3];
+        position[0] = enemy.transform.position.x;
+        position[1] = enemy.transform.position.y;
+        position[2] = enemy.transform.position.z;
     }
 
 }
