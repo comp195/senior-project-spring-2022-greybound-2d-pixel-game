@@ -9,7 +9,7 @@ public class MainMenu : MonoBehaviour
     {
         /* Loads scence from build order (-> Game is index 1)*/
         //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        SceneManager.LoadScene("TestLevel");
+        SceneManager.LoadScene("Prologue");
     }
 
     public void Quitgame()
@@ -29,6 +29,6 @@ public class MainMenu : MonoBehaviour
         position.y = data.position[1];
         position.z = data.position[2];
         transform.position = position;
-        SceneManager.LoadScene("TestLevel");
+        SceneManager.LoadScene("Prologue");
     }
 }

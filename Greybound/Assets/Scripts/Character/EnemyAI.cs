@@ -64,6 +64,7 @@ public class EnemyAI : MonoBehaviour
 
     void Die()
     {
+
         Destroy(gameObject);
     }
 

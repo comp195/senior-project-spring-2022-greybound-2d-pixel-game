@@ -71,7 +71,7 @@ public class UserWeapon : MonoBehaviour
                 */
                 muzzleFlash.SetBool("Shoot", true);
                 spawnBullet();
-                Destroy(bulletPrefab, 2.0f);
+                
             }
             else
             {
@@ -83,6 +83,7 @@ public class UserWeapon : MonoBehaviour
     void spawnBullet()
     {
         Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        Destroy(bulletPrefab, 2.0f);
     }
 
     /* Get Mouse Position in World with z = 0f */
