@@ -7,13 +7,16 @@ public class UserController2D : MonoBehaviour
 {
     public Animator topAnimator;
     public Animator bottomAnimator;
-    //public GameObject crossHair;
 
     public string currentScene;
 
     public int maxHealth = 100;
     public int currentHealth;
     public HealthBar healthBar;
+
+    public Transform talkPoint;
+    public LayerMask npcLayer;
+    public float talkRange = 0.23f;
 
     Vector3 movement;
 
@@ -29,6 +32,9 @@ public class UserController2D : MonoBehaviour
         TopAnimate();
         BottomAnimate();
         Move();
+
+        Scene scene = SceneManager.GetActiveScene();
+        currentScene = scene.name;
     }
 
     void ProcessInputs()
@@ -45,9 +51,14 @@ public class UserController2D : MonoBehaviour
             TakeDamage(20);
         }
 
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.F))
         {
             HealDamage(20);
+        }
+
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            talk();
         }
     }
 
@@ -80,15 +91,28 @@ public class UserController2D : MonoBehaviour
         bottomAnimator.SetFloat("Magnitude", movement.magnitude);
     }
 
+    public void talk()
+    {
+        Collider2D[] talkToNPC = Physics2D.OverlapCircleAll(talkPoint.position, talkRange, npcLayer);
+        foreach (Collider2D npc in talkToNPC)
+        {
+            npc.GetComponent<DialogueTrigger>().TriggerDialogue();
+        }
+    }
+
     void HealthStat()
     {
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
     }
 
-    void TakeDamage(int damage)
+    public void TakeDamage(int damage)
     {
         currentHealth -= damage;
+        if (currentHealth < 0)
+        {
+            currentHealth = 0;
+        }
         healthBar.SetHealth(currentHealth);
     }
     
@@ -107,23 +131,13 @@ public class UserController2D : MonoBehaviour
         SaveSystem.SavePlayer(this);
     }
 
-
     public void LoadPlayer()
     {
         PlayerData data = SaveSystem.LoadPlayer();
-
         currentScene = data.scene;
-        /*
-        if (currentScene == "TestLevel")
-        {
-            SceneManager.LoadScene("TestLevel");
-        }
 
-        if (currentScene == "Saloon")
-        {
-            SceneManager.LoadScene("Saloon");
-        }
-        /*
+        //SceneManager.LoadScene(currentScene);
+        //Time.timeScale = 1f;
 
         /* Import all player attributes */
         currentHealth = data.health;
@@ -134,8 +148,8 @@ public class UserController2D : MonoBehaviour
         position.y = data.position[1];
         position.z = data.position[2];
         transform.position = position;
+        //Move();
         /* Destroy bullets when loading */
-
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -169,5 +183,13 @@ public class UserController2D : MonoBehaviour
     {
         Vector3 worldPosition = worldCamera.ScreenToWorldPoint(screenPosition);
         return worldPosition;
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        if (talkPoint == null)
+            return;
+
+        Gizmos.DrawWireSphere(talkPoint.position, talkRange);
     }
 }

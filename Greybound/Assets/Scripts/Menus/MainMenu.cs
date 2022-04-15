@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    public string currentScene;
+
     public void Playgame()
     {
         /* Loads scence from build order (-> Game is index 1)*/
@@ -21,6 +23,7 @@ public class MainMenu : MonoBehaviour
     public void Loadgame()
     {
         PlayerData data = SaveSystem.LoadPlayer();
+        currentScene = data.scene;
 
         /* Import all player attributes */
 
@@ -29,6 +32,6 @@ public class MainMenu : MonoBehaviour
         position.y = data.position[1];
         position.z = data.position[2];
         transform.position = position;
-        SceneManager.LoadScene("Prologue");
+        SceneManager.LoadScene(currentScene);
     }
 }
