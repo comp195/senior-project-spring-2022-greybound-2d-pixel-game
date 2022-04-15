@@ -2020,3 +2020,48 @@ System memory in use after: 141.4 MB.
 Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 4513.
 Total: 2.746700 ms (FindLiveObjects: 0.292800 ms CreateObjectMapping: 0.147900 ms MarkObjects: 2.204800 ms  DeleteObjects: 0.100400 ms)
 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005330 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\Github\senior-project-spring-2022-greybound-2d-pixel-game\Greybound\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\Github\senior-project-spring-2022-greybound-2d-pixel-game\Greybound\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.86 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.316 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.85 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3701 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 141.3 MB.
+System memory in use after: 141.4 MB.
+
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 4517.
+Total: 2.891000 ms (FindLiveObjects: 0.327900 ms CreateObjectMapping: 0.198900 ms MarkObjects: 2.180700 ms  DeleteObjects: 0.182400 ms)
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 3.87 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 68.3 MB.
+System memory in use after: 68.4 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 4517.
+Total: 2.917000 ms (FindLiveObjects: 0.355400 ms CreateObjectMapping: 0.155500 ms MarkObjects: 2.286800 ms  DeleteObjects: 0.118600 ms)
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 3.03 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 68.3 MB.
+System memory in use after: 68.4 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 4517.
+Total: 3.600300 ms (FindLiveObjects: 0.335300 ms CreateObjectMapping: 0.181900 ms MarkObjects: 2.972000 ms  DeleteObjects: 0.109900 ms)
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
