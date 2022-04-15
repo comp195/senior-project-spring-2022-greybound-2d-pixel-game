@@ -58,7 +58,7 @@ public class UserController2D : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.E))
         {
-            talk();
+            Interact();
         }
     }
 
@@ -91,7 +91,7 @@ public class UserController2D : MonoBehaviour
         bottomAnimator.SetFloat("Magnitude", movement.magnitude);
     }
 
-    public void talk()
+    public void Interact()
     {
         Collider2D[] talkToNPC = Physics2D.OverlapCircleAll(talkPoint.position, talkRange, npcLayer);
         foreach (Collider2D npc in talkToNPC)
