@@ -83,7 +83,7 @@ public class UserWeapon : MonoBehaviour
     void spawnBullet()
     {
         Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
-        Destroy(bulletPrefab, 2.0f);
+        //Destroy(bulletPrefab, 2.0f);
     }
 
     /* Get Mouse Position in World with z = 0f */
