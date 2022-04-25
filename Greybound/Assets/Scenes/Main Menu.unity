@@ -2487,6 +2487,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb28bba5ff0e49e48ac2ec666299c4af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentScene: 
 --- !u!1 &928517128
 GameObject:
   m_ObjectHideFlags: 0
@@ -3079,8 +3080,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -77.988, y: 196.58}
-  m_SizeDelta: {x: 1762.9, y: 275.44}
+  m_AnchoredPosition: {x: -77.988, y: 235.59317}
+  m_SizeDelta: {x: 1762.9, y: 281.347}
   m_Pivot: {x: 0.4279551, y: 0.39968964}
 --- !u!114 &964862185
 MonoBehaviour:
@@ -3107,7 +3108,9 @@ MonoBehaviour:
     LEFT CLICK: SHOOT (WHILE AIMING)
 
     MOVE
-    MOUSE: LOOK AROUND'
+    MOUSE: LOOK AROUND
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1a7736a9e9b0af445a80c08a0910b180, type: 2}
   m_sharedMaterial: {fileID: 5587829144718841160, guid: 1a7736a9e9b0af445a80c08a0910b180, type: 2}
@@ -6829,8 +6832,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -379, y: -284}
-  m_SizeDelta: {x: 1059.5266, y: 433.0904}
+  m_AnchoredPosition: {x: -379, y: -239.83}
+  m_SizeDelta: {x: 1059.5266, y: 543.59}
   m_Pivot: {x: 0.4279551, y: 0.39968964}
 --- !u!114 &1807873134
 MonoBehaviour:
@@ -6858,7 +6861,10 @@ MonoBehaviour:
 
     S:   MOVE RIGHT
 
-    D:  MOVE DOWN'
+    D:  MOVE DOWN
+
+    E:  
+    INTERACT'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1a7736a9e9b0af445a80c08a0910b180, type: 2}
   m_sharedMaterial: {fileID: 5587829144718841160, guid: 1a7736a9e9b0af445a80c08a0910b180, type: 2}

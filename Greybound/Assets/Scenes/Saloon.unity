@@ -3833,7 +3833,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d39911b2ad1d9444b8c820d5f052839, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  newLevel: Prologue
+  newLevel: Level2
 --- !u!70 &989059980
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
