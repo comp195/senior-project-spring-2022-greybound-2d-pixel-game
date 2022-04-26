@@ -34,4 +34,9 @@ public class MainMenu : MonoBehaviour
         transform.position = position;
         SceneManager.LoadScene(currentScene);
     }
+
+    public void LoadMainMenu()
+    {
+        SceneManager.LoadScene("Main Menu");
+    }
 }

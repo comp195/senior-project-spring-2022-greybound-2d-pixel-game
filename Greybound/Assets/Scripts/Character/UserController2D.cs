@@ -112,6 +112,7 @@ public class UserController2D : MonoBehaviour
         if (currentHealth < 0)
         {
             currentHealth = 0;
+            SceneManager.LoadScene("Death Screen");
         }
         healthBar.SetHealth(currentHealth);
     }

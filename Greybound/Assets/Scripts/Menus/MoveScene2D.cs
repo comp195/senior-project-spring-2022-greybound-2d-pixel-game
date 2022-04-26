@@ -6,12 +6,14 @@ using UnityEngine.SceneManagement;
 public class MoveScene2D : MonoBehaviour
 {
     [SerializeField] private string newLevel;
+    public GameObject spawnPoint;
 
     void OnTriggerEnter2D(Collider2D other)
     {
         if(other.CompareTag("Player"))
         {
             SceneManager.LoadScene(newLevel);
+
         }
     }
 }
