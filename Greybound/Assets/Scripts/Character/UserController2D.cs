@@ -18,6 +18,8 @@ public class UserController2D : MonoBehaviour
     public LayerMask npcLayer;
     public float talkRange = 0.23f;
 
+    public AudioSource walkSound1;
+
     Vector3 movement;
 
     void Start()
@@ -32,7 +34,6 @@ public class UserController2D : MonoBehaviour
         TopAnimate();
         BottomAnimate();
         Move();
-
         Scene scene = SceneManager.GetActiveScene();
         currentScene = scene.name;
     }
@@ -54,6 +55,7 @@ public class UserController2D : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.F))
         {
             HealDamage(20);
+            
         }
 
         if (Input.GetKeyDown(KeyCode.E))
@@ -66,6 +68,7 @@ public class UserController2D : MonoBehaviour
     {
         /* Smooths movement out */
         transform.position = transform.position + movement * Time.deltaTime;
+       
     }
 
     public void TopAnimate()
@@ -89,6 +92,7 @@ public class UserController2D : MonoBehaviour
         bottomAnimator.SetFloat("Horizontal", aimDirection.x);
         bottomAnimator.SetFloat("Vertical", aimDirection.y);
         bottomAnimator.SetFloat("Magnitude", movement.magnitude);
+        //walkSound1.Play();
     }
 
     public void Interact()

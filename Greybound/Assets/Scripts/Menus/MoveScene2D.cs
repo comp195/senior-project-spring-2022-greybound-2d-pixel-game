@@ -7,6 +7,16 @@ public class MoveScene2D : MonoBehaviour
 {
     [SerializeField] private string newLevel;
     public GameObject spawnPoint;
+    public string currentScene;
+    public float loadRate = 5f;
+    float nextLoadTime = 10f;
+
+    void Update()
+    {
+        Scene scene = SceneManager.GetActiveScene();
+        currentScene = scene.name;
+        //LoadingScreen();
+    }
 
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -16,4 +26,18 @@ public class MoveScene2D : MonoBehaviour
 
         }
     }
+
+
+    void LoadingScreen()
+    {
+        if (currentScene == "LoadingScreen")
+        {
+            if (Time.time >= nextLoadTime)
+            {
+                nextLoadTime = Time.time + 1f / loadRate;
+                //SceneManager.LoadScene("Prologue");
+            }
+        }
+    }
+
 }

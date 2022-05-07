@@ -15,11 +15,11 @@ D:/Github/senior-project-spring-2022-greybound-2d-pixel-game/Greybound
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-54735
+58855
 Successfully changed project path to: D:/Github/senior-project-spring-2022-greybound-2d-pixel-game/Greybound
 D:/Github/senior-project-spring-2022-greybound-2d-pixel-game/Greybound
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 91.80 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 95.23 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.1.7f1 (d91830b65d9b)
 [Subsystems] Discovering subsystems at path D:/Unity/Unity Editors/2021.1.7f1/Editor/Data/Resources/UnitySubsystems
@@ -30,534 +30,550 @@ Direct3D:
     Renderer: NVIDIA GeForce RTX 2070 SUPER (ID=0x1e84)
     Vendor:   NVIDIA
     VRAM:     8011 MB
-    Driver:   30.0.15.1215
+    Driver:   30.0.15.1259
 Initialize mono
 Mono path[0] = 'D:/Unity/Unity Editors/2021.1.7f1/Editor/Data/Managed'
 Mono path[1] = 'D:/Unity/Unity Editors/2021.1.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'D:/Unity/Unity Editors/2021.1.7f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56596
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56112
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/Unity/Unity Editors/2021.1.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001206 seconds.
+Registered in 0.001538 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 98.25 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 98.51 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.330 seconds
+- Completed reload, in  1.335 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.003837 seconds.
+Registered in 0.003945 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image D:\Github\senior-project-spring-2022-greybound-2d-pixel-game\Greybound\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image D:\Github\senior-project-spring-2022-greybound-2d-pixel-game\Greybound\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 95.09 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 102.54 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.125 seconds
+- Completed reload, in  1.166 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.13 seconds
-Refreshing native plugins compatible for Editor in 0.65 ms, found 2 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
+Refreshing native plugins compatible for Editor in 0.66 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3725 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 142.2 MB.
+Unloading 3728 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 142.3 MB.
 System memory in use after: 142.3 MB.
 
-Unloading 30 unused Assets to reduce memory usage. Loaded Objects now: 4179.
-Total: 2.587000 ms (FindLiveObjects: 0.261600 ms CreateObjectMapping: 0.129000 ms MarkObjects: 2.080700 ms  DeleteObjects: 0.114800 ms)
+Unloading 30 unused Assets to reduce memory usage. Loaded Objects now: 4182.
+Total: 2.507900 ms (FindLiveObjects: 0.253800 ms CreateObjectMapping: 0.162900 ms MarkObjects: 1.964200 ms  DeleteObjects: 0.126000 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Scenes/Main Menu 1.unity
-  artifactKey: Guid(a0f331169515661418bbe1543ff8ec80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Main Menu 1.unity using Guid(a0f331169515661418bbe1543ff8ec80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c278d6dc44374dab296cdb4a1a6595ae') in 0.017678 seconds 
+  path: Assets/Scenes/Saloon.unity
+  artifactKey: Guid(f72c7d17cadcc334d92a59698c5551b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Saloon.unity using Guid(f72c7d17cadcc334d92a59698c5551b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4789be27d1f528c2ff7c07f33036755c') in 0.073593 seconds 
 ========================================================================
-Received Import Request.
-  Time since last request: 336.641484 seconds.
-  path: Assets/Scenes/Death Screen.unity
-  artifactKey: Guid(a0f331169515661418bbe1543ff8ec80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Death Screen.unity using Guid(a0f331169515661418bbe1543ff8ec80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de44574b21f5869cf133e638ad865be5') in 0.007253 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 145.091707 seconds.
-  path: Assets/Scenes/Death Screen.unity
-  artifactKey: Guid(a0f331169515661418bbe1543ff8ec80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Death Screen.unity using Guid(a0f331169515661418bbe1543ff8ec80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8b804a2c9137cec5261e28831763f69') in 0.004596 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 86.145682 seconds.
-  path: Assets/Scripts/Menus/MainMenu.cs
-  artifactKey: Guid(eb28bba5ff0e49e48ac2ec666299c4af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Menus/MainMenu.cs using Guid(eb28bba5ff0e49e48ac2ec666299c4af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '977816f3db6f25c9c64d6f000883d280') in 0.075517 seconds 
+Received Prepare
+Refreshing native plugins compatible for Editor in 3.24 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 67.1 MB.
+System memory in use after: 67.2 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 4182.
+Total: 3.011000 ms (FindLiveObjects: 0.260900 ms CreateObjectMapping: 0.151400 ms MarkObjects: 2.496400 ms  DeleteObjects: 0.101100 ms)
+
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.004265 seconds.
+Registered in 0.003879 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image D:\Github\senior-project-spring-2022-greybound-2d-pixel-game\Greybound\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image D:\Github\senior-project-spring-2022-greybound-2d-pixel-game\Greybound\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.66 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.97 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.974 seconds
+- Completed reload, in  1.012 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.65 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.85 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3701 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3704 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 140.4 MB.
 System memory in use after: 140.5 MB.
 
-Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 4183.
-Total: 2.639700 ms (FindLiveObjects: 0.273700 ms CreateObjectMapping: 0.176800 ms MarkObjects: 2.075700 ms  DeleteObjects: 0.112300 ms)
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 4186.
+Total: 2.756000 ms (FindLiveObjects: 0.300200 ms CreateObjectMapping: 0.192600 ms MarkObjects: 2.151300 ms  DeleteObjects: 0.111000 ms)
 
-========================================================================
-Received Import Request.
-  Time since last request: 13.608715 seconds.
-  path: Assets/Scenes/Death Screen.unity
-  artifactKey: Guid(a0f331169515661418bbe1543ff8ec80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Death Screen.unity using Guid(a0f331169515661418bbe1543ff8ec80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfb86e57b8502e78ea611709ff1ec445') in 0.016369 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.003667 seconds.
+Registered in 0.003819 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image D:\Github\senior-project-spring-2022-greybound-2d-pixel-game\Greybound\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image D:\Github\senior-project-spring-2022-greybound-2d-pixel-game\Greybound\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.66 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.035 seconds
-Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 0.65 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3701 Unused Serialized files (Serialized files now loaded: 0)
+Mono: successfully reloaded assembly
+- Completed reload, in  1.001 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.71 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3704 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 140.5 MB.
 System memory in use after: 140.6 MB.
 
-Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 4187.
-Total: 2.290000 ms (FindLiveObjects: 0.265500 ms CreateObjectMapping: 0.128000 ms MarkObjects: 1.800300 ms  DeleteObjects: 0.095500 ms)
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 4190.
+Total: 2.852100 ms (FindLiveObjects: 0.292600 ms CreateObjectMapping: 0.163800 ms MarkObjects: 2.274600 ms  DeleteObjects: 0.120200 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 186.305806 seconds.
-  path: Assets/Scripts/Character/UserController2D.cs
-  artifactKey: Guid(aec7069db2356fc42a8782378da4a589) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Character/UserController2D.cs using Guid(aec7069db2356fc42a8782378da4a589) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33c83c606e0c6d7d5af2c59f86b64991') in 0.030559 seconds 
+  Time since last request: 141.449970 seconds.
+  path: Assets/Scenes/Prologue.unity
+  artifactKey: Guid(cc875cbe088256a45a38545bf32973d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Prologue.unity using Guid(cc875cbe088256a45a38545bf32973d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8174e22edbcdfcdd80891b35b6847b23') in 0.027074 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 132.530692 seconds.
+  path: Assets/Scenes/Prologue.unity
+  artifactKey: Guid(cc875cbe088256a45a38545bf32973d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Prologue.unity using Guid(cc875cbe088256a45a38545bf32973d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51f768f10bfd34619646529e71bdcf3c') in 0.003974 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.003760 seconds.
+Registered in 0.005211 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image D:\Github\senior-project-spring-2022-greybound-2d-pixel-game\Greybound\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image D:\Github\senior-project-spring-2022-greybound-2d-pixel-game\Greybound\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.94 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.88 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.092 seconds
+- Completed reload, in  1.090 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.65 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.71 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3701 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 140.5 MB.
-System memory in use after: 140.6 MB.
-
-Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 4191.
-Total: 4.046400 ms (FindLiveObjects: 1.093600 ms CreateObjectMapping: 0.511400 ms MarkObjects: 2.333300 ms  DeleteObjects: 0.106200 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 212.681611 seconds.
-  path: Assets/Scripts/Menus/MoveScene2D.cs
-  artifactKey: Guid(4d39911b2ad1d9444b8c820d5f052839) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Menus/MoveScene2D.cs using Guid(4d39911b2ad1d9444b8c820d5f052839) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '493d2ee7a54010a1c61496366927da57') in 0.013657 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 343.622164 seconds.
-  path: Assets/Scripts/Character/EnemyAI.cs
-  artifactKey: Guid(dec5a3a012af79e49a34928caac4ad58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Character/EnemyAI.cs using Guid(dec5a3a012af79e49a34928caac4ad58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd75973b5e2fc3273aa812a2b6d310ff5') in 0.009092 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004394 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\Github\senior-project-spring-2022-greybound-2d-pixel-game\Greybound\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\Github\senior-project-spring-2022-greybound-2d-pixel-game\Greybound\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.29 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.100 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.68 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3701 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 140.5 MB.
-System memory in use after: 140.6 MB.
-
-Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 4195.
-Total: 6.626500 ms (FindLiveObjects: 0.434600 ms CreateObjectMapping: 0.294100 ms MarkObjects: 5.743000 ms  DeleteObjects: 0.153400 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 154.267284 seconds.
-  path: Assets/Scenes/Death Screen.unity
-  artifactKey: Guid(a0f331169515661418bbe1543ff8ec80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Death Screen.unity using Guid(a0f331169515661418bbe1543ff8ec80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1287f880dc43ef67453e6369780851ce') in 0.021346 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 17.515433 seconds.
-  path: Assets/Scenes/Death Screen 1.unity
-  artifactKey: Guid(dfe0b63eeea0d52489d60a943710db6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Death Screen 1.unity using Guid(dfe0b63eeea0d52489d60a943710db6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '850d34caa408d6ad701a890ab2358f87') in 0.010027 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 15.113098 seconds.
-  path: Assets/Scenes/ToBeContinued.unity
-  artifactKey: Guid(dfe0b63eeea0d52489d60a943710db6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/ToBeContinued.unity using Guid(dfe0b63eeea0d52489d60a943710db6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b418e9acada823ee378a5d270319f756') in 0.015311 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 126.358779 seconds.
-  path: Assets/Scenes/ToBeContinued.unity
-  artifactKey: Guid(dfe0b63eeea0d52489d60a943710db6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/ToBeContinued.unity using Guid(dfe0b63eeea0d52489d60a943710db6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08cfccf16f2a6e14611157b86a786b66') in 0.005452 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004091 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\Github\senior-project-spring-2022-greybound-2d-pixel-game\Greybound\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\Github\senior-project-spring-2022-greybound-2d-pixel-game\Greybound\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.73 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.247 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.67 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3701 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 140.5 MB.
-System memory in use after: 140.7 MB.
-
-Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 4199.
-Total: 2.823200 ms (FindLiveObjects: 0.260200 ms CreateObjectMapping: 0.167600 ms MarkObjects: 2.274900 ms  DeleteObjects: 0.119200 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003919 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\Github\senior-project-spring-2022-greybound-2d-pixel-game\Greybound\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\Github\senior-project-spring-2022-greybound-2d-pixel-game\Greybound\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.24 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.133 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.11 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3701 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3704 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 140.6 MB.
 System memory in use after: 140.7 MB.
 
-Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 4203.
-Total: 3.488300 ms (FindLiveObjects: 0.309500 ms CreateObjectMapping: 0.211800 ms MarkObjects: 2.746300 ms  DeleteObjects: 0.219200 ms)
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 4194.
+Total: 3.098100 ms (FindLiveObjects: 0.375100 ms CreateObjectMapping: 0.213900 ms MarkObjects: 2.400600 ms  DeleteObjects: 0.106800 ms)
 
+========================================================================
+Received Import Request.
+  Time since last request: 113.317880 seconds.
+  path: Assets/Scenes/Prologue.unity
+  artifactKey: Guid(cc875cbe088256a45a38545bf32973d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Prologue.unity using Guid(cc875cbe088256a45a38545bf32973d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '658b340a2c36c0f7e81048eef3c52acf') in 0.015681 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.004099 seconds.
+Registered in 0.003879 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image D:\Github\senior-project-spring-2022-greybound-2d-pixel-game\Greybound\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image D:\Github\senior-project-spring-2022-greybound-2d-pixel-game\Greybound\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.66 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.74 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.132 seconds
+- Completed reload, in  1.015 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.83 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3701 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 140.6 MB.
-System memory in use after: 140.7 MB.
-
-Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 4207.
-Total: 2.756000 ms (FindLiveObjects: 0.305300 ms CreateObjectMapping: 0.204700 ms MarkObjects: 2.109800 ms  DeleteObjects: 0.134500 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004940 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\Github\senior-project-spring-2022-greybound-2d-pixel-game\Greybound\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\Github\senior-project-spring-2022-greybound-2d-pixel-game\Greybound\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.64 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.075 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.19 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3701 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3704 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 140.6 MB.
 System memory in use after: 140.7 MB.
 
-Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 4211.
-Total: 2.791200 ms (FindLiveObjects: 0.298300 ms CreateObjectMapping: 0.296000 ms MarkObjects: 2.078100 ms  DeleteObjects: 0.117300 ms)
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 4198.
+Total: 2.771700 ms (FindLiveObjects: 0.284500 ms CreateObjectMapping: 0.242900 ms MarkObjects: 2.142100 ms  DeleteObjects: 0.101300 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.004668 seconds.
+Registered in 0.003704 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image D:\Github\senior-project-spring-2022-greybound-2d-pixel-game\Greybound\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image D:\Github\senior-project-spring-2022-greybound-2d-pixel-game\Greybound\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.92 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 1.08 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.125 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.90 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3701 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 140.6 MB.
-System memory in use after: 140.7 MB.
-
-Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 4215.
-Total: 3.174400 ms (FindLiveObjects: 0.317800 ms CreateObjectMapping: 0.321300 ms MarkObjects: 2.413600 ms  DeleteObjects: 0.120700 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004686 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\Github\senior-project-spring-2022-greybound-2d-pixel-game\Greybound\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\Github\senior-project-spring-2022-greybound-2d-pixel-game\Greybound\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.67 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.126 seconds
+- Completed reload, in  0.988 seconds
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 0.75 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3701 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3704 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 140.6 MB.
 System memory in use after: 140.7 MB.
 
-Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 4219.
-Total: 3.209700 ms (FindLiveObjects: 0.301700 ms CreateObjectMapping: 0.245000 ms MarkObjects: 2.539000 ms  DeleteObjects: 0.122700 ms)
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 4202.
+Total: 2.550400 ms (FindLiveObjects: 0.279300 ms CreateObjectMapping: 0.174100 ms MarkObjects: 1.991000 ms  DeleteObjects: 0.104900 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.006242 seconds.
+Registered in 0.003682 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image D:\Github\senior-project-spring-2022-greybound-2d-pixel-game\Greybound\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image D:\Github\senior-project-spring-2022-greybound-2d-pixel-game\Greybound\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.00 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.69 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.108 seconds
+- Completed reload, in  0.980 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.23 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3701 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 140.5 MB.
-System memory in use after: 140.6 MB.
-
-Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 4223.
-Total: 2.844700 ms (FindLiveObjects: 0.276500 ms CreateObjectMapping: 0.173400 ms MarkObjects: 2.254200 ms  DeleteObjects: 0.139600 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004463 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\Github\senior-project-spring-2022-greybound-2d-pixel-game\Greybound\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\Github\senior-project-spring-2022-greybound-2d-pixel-game\Greybound\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.67 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.133 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.70 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3701 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 140.5 MB.
-System memory in use after: 140.6 MB.
-
-Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 4227.
-Total: 2.810400 ms (FindLiveObjects: 0.350100 ms CreateObjectMapping: 0.209000 ms MarkObjects: 2.141500 ms  DeleteObjects: 0.108800 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003964 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\Github\senior-project-spring-2022-greybound-2d-pixel-game\Greybound\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\Github\senior-project-spring-2022-greybound-2d-pixel-game\Greybound\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.70 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.140 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.74 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3701 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 140.5 MB.
-System memory in use after: 140.6 MB.
-
-Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 4231.
-Total: 2.540100 ms (FindLiveObjects: 0.296700 ms CreateObjectMapping: 0.177900 ms MarkObjects: 1.950500 ms  DeleteObjects: 0.113400 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004346 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\Github\senior-project-spring-2022-greybound-2d-pixel-game\Greybound\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\Github\senior-project-spring-2022-greybound-2d-pixel-game\Greybound\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.76 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.423 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.05 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3701 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3704 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 140.6 MB.
 System memory in use after: 140.7 MB.
 
-Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 4235.
-Total: 4.210800 ms (FindLiveObjects: 0.459400 ms CreateObjectMapping: 0.330100 ms MarkObjects: 3.321000 ms  DeleteObjects: 0.099000 ms)
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 4206.
+Total: 2.695200 ms (FindLiveObjects: 0.348800 ms CreateObjectMapping: 0.191200 ms MarkObjects: 2.049400 ms  DeleteObjects: 0.104700 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.005207 seconds.
+Registered in 0.003776 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image D:\Github\senior-project-spring-2022-greybound-2d-pixel-game\Greybound\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image D:\Github\senior-project-spring-2022-greybound-2d-pixel-game\Greybound\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.01 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 1.10 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.014 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.91 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3701 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 140.6 MB.
-System memory in use after: 140.7 MB.
-
-Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 4239.
-Total: 4.280100 ms (FindLiveObjects: 0.292800 ms CreateObjectMapping: 0.315600 ms MarkObjects: 3.540200 ms  DeleteObjects: 0.130100 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 1445.435636 seconds.
-  path: Assets/Scenes/Level2.unity
-  artifactKey: Guid(aba8fdffcbaa7254ea1235c478b7dbba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Level2.unity using Guid(aba8fdffcbaa7254ea1235c478b7dbba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d4c7a0da9f6dded34bda5ff8135e913') in 0.018373 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 492.549495 seconds.
-  path: Assets/Scripts/Character/EnvironmentHazard.cs
-  artifactKey: Guid(8099ff0a7a7c603468d67469a329e3f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Character/EnvironmentHazard.cs using Guid(8099ff0a7a7c603468d67469a329e3f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '846b90e57e49820df36209b28e73d413') in 0.008277 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003739 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\Github\senior-project-spring-2022-greybound-2d-pixel-game\Greybound\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\Github\senior-project-spring-2022-greybound-2d-pixel-game\Greybound\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.87 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.014 seconds
+- Completed reload, in  0.970 seconds
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 0.69 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3702 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3704 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 140.6 MB.
 System memory in use after: 140.7 MB.
 
-Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 4244.
-Total: 3.109800 ms (FindLiveObjects: 0.448800 ms CreateObjectMapping: 0.226400 ms MarkObjects: 2.249900 ms  DeleteObjects: 0.183400 ms)
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 4210.
+Total: 3.107500 ms (FindLiveObjects: 0.269900 ms CreateObjectMapping: 0.195600 ms MarkObjects: 2.541100 ms  DeleteObjects: 0.100100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003860 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\Github\senior-project-spring-2022-greybound-2d-pixel-game\Greybound\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\Github\senior-project-spring-2022-greybound-2d-pixel-game\Greybound\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.66 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.910 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.77 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3704 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 140.6 MB.
+System memory in use after: 140.7 MB.
+
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 4214.
+Total: 2.827200 ms (FindLiveObjects: 0.268300 ms CreateObjectMapping: 0.154400 ms MarkObjects: 2.306200 ms  DeleteObjects: 0.097400 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 120.215703 seconds.
-  path: Assets/Scripts/Character/EnvironmentHazard.cs
-  artifactKey: Guid(8099ff0a7a7c603468d67469a329e3f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Character/EnvironmentHazard.cs using Guid(8099ff0a7a7c603468d67469a329e3f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '953f9e3c679f82775437968e70b863d4') in 0.008537 seconds 
+  Time since last request: 406.621188 seconds.
+  path: Assets/Scenes/Prologue.unity
+  artifactKey: Guid(cc875cbe088256a45a38545bf32973d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Prologue.unity using Guid(cc875cbe088256a45a38545bf32973d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd6dc6be357f6badb56b06a730aba7ac') in 0.021214 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003719 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\Github\senior-project-spring-2022-greybound-2d-pixel-game\Greybound\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\Github\senior-project-spring-2022-greybound-2d-pixel-game\Greybound\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.68 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.980 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.72 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3704 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 140.6 MB.
+System memory in use after: 140.7 MB.
+
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 4218.
+Total: 2.524200 ms (FindLiveObjects: 0.282200 ms CreateObjectMapping: 0.158800 ms MarkObjects: 1.983000 ms  DeleteObjects: 0.099200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003843 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\Github\senior-project-spring-2022-greybound-2d-pixel-game\Greybound\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\Github\senior-project-spring-2022-greybound-2d-pixel-game\Greybound\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.12 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.979 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.67 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3704 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 140.7 MB.
+System memory in use after: 140.8 MB.
+
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 4222.
+Total: 2.675200 ms (FindLiveObjects: 0.279500 ms CreateObjectMapping: 0.167700 ms MarkObjects: 2.117100 ms  DeleteObjects: 0.110000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004083 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\Github\senior-project-spring-2022-greybound-2d-pixel-game\Greybound\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\Github\senior-project-spring-2022-greybound-2d-pixel-game\Greybound\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.68 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.934 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.80 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3704 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 140.6 MB.
+System memory in use after: 140.7 MB.
+
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 4226.
+Total: 3.364500 ms (FindLiveObjects: 0.294500 ms CreateObjectMapping: 0.214500 ms MarkObjects: 2.726100 ms  DeleteObjects: 0.128500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003822 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\Github\senior-project-spring-2022-greybound-2d-pixel-game\Greybound\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\Github\senior-project-spring-2022-greybound-2d-pixel-game\Greybound\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.67 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.905 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.68 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3704 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 140.6 MB.
+System memory in use after: 140.7 MB.
+
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 4230.
+Total: 2.728500 ms (FindLiveObjects: 0.252000 ms CreateObjectMapping: 0.166700 ms MarkObjects: 2.201600 ms  DeleteObjects: 0.107400 ms)
+
 ========================================================================
 Received Import Request.
-  Time since last request: 65.477169 seconds.
+  Time since last request: 497.500066 seconds.
+  path: Assets/Scenes/Prologue.unity
+  artifactKey: Guid(cc875cbe088256a45a38545bf32973d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Prologue.unity using Guid(cc875cbe088256a45a38545bf32973d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c7418f29ef045069588cf7c7086fefb') in 0.016176 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.105178 seconds.
   path: Assets/Scenes/Level2.unity
   artifactKey: Guid(aba8fdffcbaa7254ea1235c478b7dbba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Level2.unity using Guid(aba8fdffcbaa7254ea1235c478b7dbba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86df73c32135d9a83193320b7cc8109c') in 0.012385 seconds 
+Start importing Assets/Scenes/Level2.unity using Guid(aba8fdffcbaa7254ea1235c478b7dbba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38540d091be214bda73a83ba85770fec') in 0.006447 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 87.463279 seconds.
+  path: Assets/Scenes/Level2.unity
+  artifactKey: Guid(aba8fdffcbaa7254ea1235c478b7dbba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Level2.unity using Guid(aba8fdffcbaa7254ea1235c478b7dbba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '709de4cedeccc409915ce7e9dfbb2afc') in 0.003517 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.563631 seconds.
+  path: Assets/Scenes/0-1 Transition.unity
+  artifactKey: Guid(b53248eb633dd4f43ae6539bc70a9374) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/0-1 Transition.unity using Guid(b53248eb633dd4f43ae6539bc70a9374) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cadbce7250e041d2c60d841c220f7738') in 0.022635 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.003701 seconds.
+Registered in 0.003896 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image D:\Github\senior-project-spring-2022-greybound-2d-pixel-game\Greybound\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image D:\Github\senior-project-spring-2022-greybound-2d-pixel-game\Greybound\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.75 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.66 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.945 seconds
+- Completed reload, in  0.958 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.06 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.65 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3702 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3704 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 140.6 MB.
 System memory in use after: 140.7 MB.
 
-Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 4248.
-Total: 2.714600 ms (FindLiveObjects: 0.384500 ms CreateObjectMapping: 0.244600 ms MarkObjects: 1.973500 ms  DeleteObjects: 0.111000 ms)
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 4234.
+Total: 2.973600 ms (FindLiveObjects: 0.297100 ms CreateObjectMapping: 0.192900 ms MarkObjects: 2.369100 ms  DeleteObjects: 0.113300 ms)
 
+========================================================================
+Received Import Request.
+  Time since last request: 26.747202 seconds.
+  path: Assets/Scenes/0-1 Transition.unity
+  artifactKey: Guid(b53248eb633dd4f43ae6539bc70a9374) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/0-1 Transition.unity using Guid(b53248eb633dd4f43ae6539bc70a9374) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '279e23cf43f81e2c00f224e1c9655db0') in 0.014070 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.387975 seconds.
+  path: Assets/Scenes/Saloon.unity
+  artifactKey: Guid(f72c7d17cadcc334d92a59698c5551b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Saloon.unity using Guid(f72c7d17cadcc334d92a59698c5551b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '493ee4635e5756e709c5003338a3834b') in 0.003502 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.003991 seconds.
+Registered in 0.003801 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image D:\Github\senior-project-spring-2022-greybound-2d-pixel-game\Greybound\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image D:\Github\senior-project-spring-2022-greybound-2d-pixel-game\Greybound\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.64 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.69 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.999 seconds
+- Completed reload, in  0.925 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.00 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.68 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3702 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3704 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 140.6 MB.
 System memory in use after: 140.7 MB.
 
-Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 4252.
-Total: 2.575600 ms (FindLiveObjects: 0.283300 ms CreateObjectMapping: 0.201600 ms MarkObjects: 1.989900 ms  DeleteObjects: 0.100000 ms)
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 4238.
+Total: 2.705100 ms (FindLiveObjects: 0.279700 ms CreateObjectMapping: 0.177300 ms MarkObjects: 2.143600 ms  DeleteObjects: 0.103300 ms)
 
-AssetImportWorkerClient::OnTransportError - code=2 error=End of file
+========================================================================
+Received Import Request.
+  Time since last request: 43.062462 seconds.
+  path: Assets/Scenes/Level2.unity
+  artifactKey: Guid(aba8fdffcbaa7254ea1235c478b7dbba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Level2.unity using Guid(aba8fdffcbaa7254ea1235c478b7dbba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '456d48eeb7ad2cb94dcb77423ce37248') in 0.014270 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.399338 seconds.
+  path: Assets/Scenes/0-1 Transition.unity
+  artifactKey: Guid(b53248eb633dd4f43ae6539bc70a9374) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/0-1 Transition.unity using Guid(b53248eb633dd4f43ae6539bc70a9374) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57b4936c96290903bdcc320fa71f7258') in 0.003384 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.282483 seconds.
+  path: Assets/Scenes/Death Screen.unity
+  artifactKey: Guid(a0f331169515661418bbe1543ff8ec80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Death Screen.unity using Guid(a0f331169515661418bbe1543ff8ec80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c0dc1c11bc5d4a5e702d0ae284ce085') in 0.005444 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.633167 seconds.
+  path: Assets/Scenes/Prologue.unity
+  artifactKey: Guid(cc875cbe088256a45a38545bf32973d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Prologue.unity using Guid(cc875cbe088256a45a38545bf32973d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0dad657adc37b55e0857eaaadc708f6e') in 0.002154 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003758 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\Github\senior-project-spring-2022-greybound-2d-pixel-game\Greybound\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\Github\senior-project-spring-2022-greybound-2d-pixel-game\Greybound\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.71 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.048 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.84 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3704 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 140.7 MB.
+System memory in use after: 140.8 MB.
+
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 4242.
+Total: 3.066200 ms (FindLiveObjects: 0.263200 ms CreateObjectMapping: 0.175300 ms MarkObjects: 2.525500 ms  DeleteObjects: 0.101200 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 284.666799 seconds.
+  path: Assets/Scenes/Level2.unity
+  artifactKey: Guid(aba8fdffcbaa7254ea1235c478b7dbba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Level2.unity using Guid(aba8fdffcbaa7254ea1235c478b7dbba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2def46810c12e773b316cc651a7b35e') in 0.014230 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 48.179767 seconds.
+  path: Assets/Scenes/0-1 Transition.unity
+  artifactKey: Guid(b53248eb633dd4f43ae6539bc70a9374) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/0-1 Transition.unity using Guid(b53248eb633dd4f43ae6539bc70a9374) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '856665f4956483f295e580ed12f35ded') in 0.003614 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003790 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\Github\senior-project-spring-2022-greybound-2d-pixel-game\Greybound\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\Github\senior-project-spring-2022-greybound-2d-pixel-game\Greybound\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.72 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.996 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.66 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3704 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 140.7 MB.
+System memory in use after: 140.8 MB.
+
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 4246.
+Total: 2.555900 ms (FindLiveObjects: 0.296900 ms CreateObjectMapping: 0.167700 ms MarkObjects: 1.978500 ms  DeleteObjects: 0.111400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003728 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\Github\senior-project-spring-2022-greybound-2d-pixel-game\Greybound\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\Github\senior-project-spring-2022-greybound-2d-pixel-game\Greybound\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.65 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.906 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.67 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3704 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 140.7 MB.
+System memory in use after: 140.8 MB.
+
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 4250.
+Total: 2.667000 ms (FindLiveObjects: 0.275500 ms CreateObjectMapping: 0.182400 ms MarkObjects: 2.107200 ms  DeleteObjects: 0.101200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004011 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\Github\senior-project-spring-2022-greybound-2d-pixel-game\Greybound\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\Github\senior-project-spring-2022-greybound-2d-pixel-game\Greybound\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.68 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.014 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.93 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3704 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 140.7 MB.
+System memory in use after: 140.8 MB.
+
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 4254.
+Total: 3.061100 ms (FindLiveObjects: 0.297600 ms CreateObjectMapping: 0.274100 ms MarkObjects: 2.376100 ms  DeleteObjects: 0.111900 ms)
+
