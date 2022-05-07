@@ -47,15 +47,14 @@ public class UserController2D : MonoBehaviour
             movement.Normalize();
         }
 
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            TakeDamage(20);
-        }
-
         if (Input.GetKeyDown(KeyCode.F))
         {
-            HealDamage(20);
-            
+            //TakeDamage(20);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            //HealDamage(20);
         }
 
         if (Input.GetKeyDown(KeyCode.E))
